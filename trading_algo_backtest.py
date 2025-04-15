@@ -87,11 +87,11 @@ class FamaFrenchWithPredictionAlgorithm(QCAlgorithm):
 
         if remaining_weight > 0:
             factor_stock_weights = {
-                'KO': 0.1 * remaining_weight,   # Example stock for market risk premium
-                'JNJ': 0.15 * remaining_weight,  # Example stock for size factor (SMB)
-                'GS': 0.2 * remaining_weight,    # Example stock for value factor (HML)
-                'XOM': 0.1 * remaining_weight,   # Example stock for momentum (MOM)
-                'PEP': 0.1 * remaining_weight,   # Remaining diversified stocks
+                'KO': 0.1 * remaining_weight,
+                'JNJ': 0.15 * remaining_weight,
+                'GS': 0.2 * remaining_weight,    
+                'XOM': 0.1 * remaining_weight,   
+                'PEP': 0.1 * remaining_weight,  
                 'PG': 0.1 * remaining_weight,
                 'VZ': 0.1 * remaining_weight,
                 'GE': 0.15 * remaining_weight
