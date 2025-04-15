@@ -1,0 +1,21 @@
+﻿# Core scientific libraries
+numpy>=1.20
+pandas>=1.2
+scikit-learn>=0.24
+matplotlib>=3.3
+seaborn>=0.11
+
+
+# Deep learning framework
+tensorflow>=2.4
+
+
+# For FinBERT and Hugging Face Transformers
+transformers>=4.4
+sentencepiece>=0.1.90
+tokenizers>=0.10
+
+
+# If needed for local usage of QuantConnect/Lean environment
+# (On QuantConnect Cloud, these are pre-installed)
+quantconnect-lean>=0.1.0
