@@ -113,7 +113,7 @@ From **Jan 2019 to Dec 2019**
 - **Information Ratio**: 1.1  
 
 *The strategy **outperformed** its benchmark with a ~12.9% drawdown.*  
-*(See [bactest_1y.pdf](./backtests/bactest_1y.pdf) for the full report)*
+*(See [bactest_1y.pdf](./bactest_1y.pdf) for the full report)*
 
 ### 3-Year Performance
 From **Jan 2017 to Dec 2019**  
@@ -125,7 +125,7 @@ From **Jan 2017 to Dec 2019**
 - **Information Ratio**: -0.9  
 
 *Over a longer period, the strategy struggled to beat the benchmark, indicating **period-specific** alpha.*  
-*(See [3y_backtest.pdf](./backtests/3y_backtest.pdf) for the full report)*
+*(See [3y_backtest.pdf](./3y_backtest.pdf) for the full report)*
 
 ---
 
