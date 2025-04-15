@@ -47,6 +47,7 @@ This repository demonstrates a **multimodal** trading strategy aiming to outperf
 
 ## Repository Structure
 .
+
 ├── 1yearbacktes.pdf
 
 ├── 3y_backtest.pdf
