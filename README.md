@@ -2,9 +2,6 @@
 **Multimodal Model Approach to Generate Alpha Using FinBERT**  
 **Question 2: “Use LLM to outperform S&P 500”**
 
-:contentReference[oaicite:0]{index=0}  
-:contentReference[oaicite:1]{index=1}  
-
 ## Overview
 This repository demonstrates a **multimodal** trading strategy aiming to outperform the S&P 500 by identifying **extreme price movements** (±4%) in tech stocks—particularly Tesla (TSLA). Our approach combines:
 
