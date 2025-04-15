@@ -193,7 +193,7 @@ From **Jan 2017 to Dec 2019**
 
 - **Research Inspiration**:  
   - “*Prebit - A multimodal model with Twitter FinBERT embeddings for extreme price movement prediction of Bitcoin*” by Yanzhao Zou & Dorien Herremans  
-- **Academic Guidance**: Professors *Dimitry Udler* and *N. K. Chidambaran* (Fordham University)  
+- **Academic Guidance**: Professors *Dimitry Udler* and Professor *N. K. Chidambaran* (Fordham University)  
 - **QuantConnect**: Lean environment, Data feeds, and ObjectStore for backtesting
 
 ---
