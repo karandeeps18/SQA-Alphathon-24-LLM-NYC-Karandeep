@@ -136,3 +136,70 @@ From **Jan 2017 to Dec 2019**
    ```bash
    git clone https://github.com/username/alphathon-2024.git
    cd alphathon-2024
+
+## Running the Models
+
+### Train SVM (technical)
+- **Run `svm_ta.py`** (in a QuantBook or local environment).
+- Outputs stored in **ObjectStore** as `svm_probabilities_new.csv`.
+
+### Train CNN (sentiment)
+- **Run `cnn_tiingo.py`** to generate **FinBERT** embeddings and train a CNN.
+- Saves **`cnn_predictions_with_date.csv`** in ObjectStore.
+
+### Fusion
+- **Execute `fusion_model.py`** to combine **SVM + CNN** probabilities.
+
+### Backtest
+- Finally, **run `trading_algo_backtest.py`** to see performance vs. a benchmark.
+
+---
+
+## Interpreting Results
+
+- **Log output** includes classification reports, accuracy, and precision/recall for minority classes.
+- The **QuantConnect** backtest summary reveals key portfolio metrics (CAGR, drawdown, Sharpe, etc.).
+- Compare **short-term vs. long-term** performance to gauge overfitting or time-dependent alpha.
+
+---
+
+## Methodology
+
+### Data Preparation & Normalization
+- **Price-based features** are scaled by **prior-day close**; volume & index data by `pct_change()`.
+- **FinBERT embeddings** come from the **description** fields in Tiingo News (tokenized up to 512 tokens).
+
+### Handling Class Imbalances
+- Threshold **±4%** for large moves ⇒ fewer positive samples.
+- **SVM `class_weight`** & careful **threshold tuning** mitigate skewed data distribution.
+
+### Fama-French Factor Integration
+- The “**fifth factor**” is the ML model’s probability for **tech stocks**.
+- **Non-tech exposure** follows **MKT, SMB, HML, MOM** factors to diversify.
+- **Daily rebalancing** with constraints on position sizing (e.g., max **10%** per strong tech signal).
+
+---
+
+## Future Enhancements
+
+1. **Extended Data**: Include **2020–2022** data to test pandemic/volatility resilience.  
+2. **Advanced Sampling**: Use **SMOTE** or other synthetic methods for extreme-move minority oversampling.  
+3. **Transformer Architectures**: Explore advanced fusion (e.g., **BERT-based** sequence models).  
+4. **Dynamic Thresholding**: Adapt thresholds in real-time based on volatility regimes.
+
+---
+
+## Credits & Acknowledgements
+
+- **Research Inspiration**:  
+  - “*Prebit - A multimodal model with Twitter FinBERT embeddings for extreme price movement prediction of Bitcoin*” by Yanzhao Zou & Dorien Herremans  
+- **Academic Guidance**: Professors *Dimitry Udler* and *N. K. Chidambaran* (Fordham University)  
+- **QuantConnect**: Lean environment, Data feeds, and ObjectStore for backtesting
+
+---
+
+## Disclaimer
+
+All materials and code herein are provided for **research and educational purposes** only.  
+This does **not** constitute financial advice. **Trading involves risk**; past performance does **not** guarantee future results.
+
