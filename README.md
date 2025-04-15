@@ -46,7 +46,22 @@ This repository demonstrates a **multimodal** trading strategy aiming to outperf
 ---
 
 ## Repository Structure
+.
+├── 1yearbacktes.pdf
 
+├── 3y_backtest.pdf
+
+├── bactest_1y.pdf
+
+├── cnn_tiingo.py
+
+├── fusion_model.py
+
+├── SQA ALPHATHON 2024.pdf
+
+├── svm_ta.py
+
+└── trading_algo_backtest.py
 
 
 
