@@ -14,31 +14,30 @@ This repository demonstrates a **multimodal** trading strategy aiming to outperf
 ---
 
 ## Table of Contents
-
-1. [Repository Structure](#repository-structure)  
-2. [Dependencies](#dependencies)  
-3. [Data Sources](#data-sources)  
+ 
+1. [Dependencies](#dependencies)  
+2. [Data Sources](#data-sources)  
    - [Technical Data](#technical-data)  
    - [FinBERT Embeddings & News](#finbert-embeddings--news)  
-4. [Core Modules](#core-modules)  
+3. [Core Modules](#core-modules)  
    - [SVM for Technical Data (`svm_ta.py`)](#svm-for-technical-data)  
    - [CNN for Sentiment (`cnn_tiingo.py`)](#cnn-for-sentiment)  
    - [Fusion Model (`fusion_model.py`)](#fusion-model)  
    - [Backtest & Trading Algorithm (`trading_algo_backtest.py`)](#backtest--trading-algorithm)  
-5. [Backtest Results](#backtest-results)  
+4. [Backtest Results](#backtest-results)  
    - [1-Year Performance](#1-year-performance)  
    - [3-Year Performance](#3-year-performance)  
-6. [Usage & Instructions](#usage--instructions)  
+5. [Usage & Instructions](#usage--instructions)  
    - [Environment Setup](#environment-setup)  
    - [Running the Models](#running-the-models)  
    - [Interpreting Results](#interpreting-results)  
-7. [Methodology](#methodology)  
+6. [Methodology](#methodology)  
    - [Data Preparation & Normalization](#data-preparation--normalization)  
    - [Handling Class Imbalances](#handling-class-imbalances)  
    - [Fama-French Factor Integration](#fama-french-factor-integration)  
-8. [Future Enhancements](#future-enhancements)  
-9. [Credits & Acknowledgements](#credits--acknowledgements)  
-10. [Disclaimer](#disclaimer)
+7. [Future Enhancements](#future-enhancements)  
+8. [Credits & Acknowledgements](#credits--acknowledgements)  
+9. [Disclaimer](#disclaimer)
 
 ---
 
@@ -112,7 +111,7 @@ From **Jan 2019 to Dec 2019**
 - **Turnover**: 1%  
 - **Information Ratio**: 1.1  
 
-*The strategy **outperformed** its benchmark with a ~12.9% drawdown.*  
+*The strategy **outperformed** its benchmark with a ~12.9% drawdown.* possible overfitting. We can use 
 *(See [bactest_1y.pdf](./bactest_1y.pdf) for the full report)*
 
 ### 3-Year Performance
@@ -125,7 +124,7 @@ From **Jan 2017 to Dec 2019**
 - **Information Ratio**: -0.9  
 
 *Over a longer period, the strategy struggled to beat the benchmark, indicating **period-specific** alpha.*  
-*(See [3y_backtest.pdf](./3y_backtest.pdf) for the full report)*
+*(See [3y_backtest.pdf](./3y_backtest.pdf) for the full report)* With finetuning 
 
 ---
 
