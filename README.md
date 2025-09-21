@@ -203,4 +203,4 @@ From **Jan 2017 to Dec 2019**
 All materials and code herein are provided for **research and educational purposes** only.  
 This does **not** constitute financial advice. **Trading involves risk**; past performance does **not** guarantee future results.
 
-[Some title here](FILE_NAME.pdf)
+[COMPLETE REPORT AND BACKTEST](SQA ALPHATHON 2024.pdf.pdf)
